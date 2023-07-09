@@ -57,30 +57,38 @@ h6 {
   font-family: var(--font-primary);
 }
 
+
+
+
+
+/* Skills grid. */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-gap: 1rem;
+  font-size: 12px;
 }
 
 .grid > div {
   background: black;
-  padding: 1rem;
+  padding: 10px;
 }
 
 .grid > div::before {
   content: "";
-  padding-bottom: 100%;
+  padding: 0%;
   display: block;
 }
 
 .grid > div {
   /* ... */
   display: grid;
+  align-items: flex-end;
 }
 .grid > div::before,
 .grid > div > img {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1  / 1 / 2 / 2 ;
 }
 
 .grid > div > img {
@@ -88,6 +96,16 @@ h6 {
   height: 100%;
   object-fit: contain;
 }
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -364,7 +382,7 @@ h6 {
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .header .header-social-links a:hover {
@@ -1295,3 +1313,4 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+
