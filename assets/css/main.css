@@ -68,14 +68,14 @@ h6 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 50px;
   font-size: 12px;
 }
 
 .grid > div {
   background: black;
-  padding: 8px;
+  padding: 5px;
   
 }
 
