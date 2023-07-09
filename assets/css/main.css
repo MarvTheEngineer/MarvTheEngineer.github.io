@@ -64,8 +64,8 @@ h6 {
 /* Skills grid. */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
   width: 80%;
   margin-left: auto;
