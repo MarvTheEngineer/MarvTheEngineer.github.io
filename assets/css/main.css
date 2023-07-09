@@ -65,14 +65,18 @@ h6 {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 12px;
 }
 
 .grid > div {
   background: black;
   padding: 8px;
+  
 }
 
 .grid > div::before {
@@ -85,16 +89,18 @@ h6 {
   /* ... */
   display: grid;
   align-items: flex-end;
+  
 }
 .grid > div::before,
 .grid > div > img {
-  grid-area: 1  / 1 / 2 / 2 ;
+  grid-area: 2 / 2 / 1 / 1 ;
 }
 
 .grid > div > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  
 }
 
 
